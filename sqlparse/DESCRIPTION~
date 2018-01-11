@@ -1,0 +1,12 @@
+Package: sqlparse
+Title: Wrapper Around Python's sqlparse Package
+Version: 0.2.4
+Authors@R: person("Murat", "Tasan", email = "mmuurr@gmail.com", role = c("aut", "cre"))
+Description: Basically a re-distribution of Python's sqlparse package.
+Depends: R (>= 3.0.0), methods
+Imports: reticulate
+Suggests:
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+SystemRequirements: Python (>=2.7)
