@@ -1,3 +1,0 @@
-SQLPARSE <- reticulate::import_from_path(system.file("inst", "python", "sqlparse", package = packageName()))
-
-split <- SQLPARSE.
