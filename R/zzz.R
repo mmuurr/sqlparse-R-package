@@ -1,6 +1,7 @@
 .onLoad <- function(libname, pkgname) {
     pkg_ns_env <- parent.env(environment())
-    sqlparse <- reticulate::import_from_path("sqlparse", system.file("python", "sqlparse", package = packageName(), mustWork = TRUE))
+    ##sqlparse <- reticulate::import_from_path("sqlparse", system.file("python", "sqlparse", package = packageName(), mustWork = TRUE))
+    sqlparse <- reticulate::import_from_path("sqlparse", system.file("python", "sqlparse", package = pkgname, mustWork = TRUE))
     lapply(names(sqlparse), function(name) assign(name, sqlparse[[name]], pkg_ns_env))
 }
 
